@@ -11,6 +11,7 @@ class Human():
     def info(self):
         print(self.name, self.age, self.__house, self.__money)
 
+
     @staticmethod
     def default_info():
         print(Human.default_name, Human.default_age)
@@ -41,7 +42,7 @@ class House():
 class SmallHouse(House):
     def __init__(self, area, price) -> None:
         super().__init__(area, price)
-        self._area = '40м^2'
+        self._area = 40
 
 
 Human.default_info()
